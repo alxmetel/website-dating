@@ -10,10 +10,10 @@ Also please find in the root of the project the PSD template the website was cre
 - Slideshow;<br>
 - Form with validation;<br>
 - Fully customized radio and checkbox buttons, input and select fields;<br>
-- Carousel;<br>
+- Carousel with context menu implemented (on each of the images);<br>
 - Fully customized tabs;<br>
 - Customized progress bar, breadcrumbs and slider;<br>
 - Donut chart widget;<br>
 - 5-star rating widget;<br>
 - Adaptive 3-column layout;<br>
-- Wrapping text around a circular image.<br>
+- Wrapping text around a circular image and other text stylings.
