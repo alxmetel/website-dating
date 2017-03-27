@@ -1,0 +1,109 @@
+@import url('https://fontlibrary.org/face/source-sans-pro');
+
+.donut-chartbox {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 36px;
+}
+.donut-chartbox div[chart-type*="donut"] {
+  width: 90px;
+  height: 90px;
+  display: block;
+  position: relative;
+  margin-right: 115px;
+}
+.donut-chartbox div[chart-type*="donut"]:last-of-type {
+  margin-right: 0;
+}
+.donut-chartbox div.donut-hole {
+  height: 56.7px;
+  width: 56.7px;
+  background-color: #fff;
+  z-index: 20;
+  position: absolute;
+  top: 16.65px;
+  left: 16.65px;
+  border-radius: 56.7px;
+  line-height: 22.5px;
+}
+.donut-chartbox span.donut-filling {
+  position: absolute;
+  display: block;
+  vertical-align: middle;
+  font-family: 'SourceSansProExtraLight', sans-serif;
+  font-weight: 300;
+  color: #616161;
+  font-size: 21px;
+  top: 50%;
+  margin-top: -11.25px;
+  width: 56.7px;
+  height: 22.5px;
+  text-align: center;
+  cursor: default;
+  overflow: none;
+}
+.donut-chartbox div.donut-caption-wrapper {
+  width: 90px;
+  align-content: center;
+  position: relative;
+  top: 110px;
+}
+.donut-chartbox span.donut-caption {
+  display: block;
+  text-align: center;
+  font-family: "Open Sans";
+  color: #616161;
+  font-size: 8.666666666666666px;
+  font-weight: 600;
+  cursor: default;
+  margin: 0 auto;
+}
+.donut-chartbox .donut-bite {
+  position: absolute;
+  width: 45px;
+  height: 90px;
+  overflow: hidden;
+  top: 0;
+  left: 45.5px;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.donut-chartbox .donut-bite.large {
+  width: 90px;
+  height: 90px;
+  left: 0;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+.donut-chartbox .donut-bite:BEFORE {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 90px;
+  top: 0;
+  left: -45px;
+  border-radius: 45px 0 0 45px;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+.donut-chartbox .donut-bite.large:BEFORE {
+  left: 0;
+}
+.donut-chartbox .donut-bite.large:AFTER {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 90px;
+  left: 45px;
+  border-radius: 0 45px 45px 0;
+}

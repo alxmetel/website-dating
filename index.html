@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Dating Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="libs/slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" href="css/tabs.css" />
+	<link rel="stylesheet" type="text/css" href="libs/charts/charts.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+	<header class="top-header">
+		<a href="#" class="top-logo"><img src="images/logo.png" alt="Web Coder"></a>
+	</header>
+
+	<section class="form-section">
+		<div class="form-wrapper">
+			<div class="one-half">
+				<div class="rotator">
+					<div class="rotator-slides">
+						<ul>
+							<li class="show"><img src="images/slide-2.png" width="480" height="466" alt="slide-2"/></li>
+							<li><img src="images/slide-1.png" width="480" height="466" alt="slide-1"/></li>
+							<li><img src="images/slide-3.png" width="480" height="466" alt="slide-3"/></li>
+							<li><img src="images/slide-4.png" width="480" height="466" alt="slide-4"/></li>
+						</ul>
+					</div>
+					<div class="rotator-pagination">
+						<ul>
+							<li class="active"><img src="images/pagination-inactive.png"></li>
+							<li><img src="images/pagination-inactive.png"></li>
+							<li><img src="images/pagination-inactive.png"></li>
+							<li><img src="images/pagination-inactive.png"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="one-half">
+				<form class="form"> <!--action="#" method="get"-->
+					<h2>Join us now. It's FREE</h2>
+
+					<fieldset class="form-genders">
+						<span class="form-left-col">I am</span>
+						<div class="gender-user">
+							<input id="gender-user-female" type="radio" name="user-gender" value="female" checked>
+							<label for="gender-user-female"></label>
+
+							<input id="gender-user-male" type="radio" name="user-gender" value="male">
+							<label for="gender-user-male"></label>
+						</div>
+						<div id="looking-for">
+							<img src="images/search.png">
+							<span>looking for</span>
+						</div>
+						<div class="gender-target">
+							<input id="gender-target-female" type="radio" name="target-gender" value="female">
+							<label for="gender-target-female"></label>
+
+							<input id="gender-target-male" type="radio" name="target-gender" value="" checked >
+							<label for="gender-target-male"></label>
+						</div>
+					</fieldset>
+
+					<fieldset class="form-name">
+						<label for="name" class="form-left-col">Name:</label>
+						<div class="form-generic-styled-wrapper form-name-styled">
+							<input class="form-generic-input form-name-input" type="text" id="name" name="user-name">
+						</div>
+						<div class="name-validation">
+							<img class="valid" src="images/mark-valid.png" alt="Valid">
+							<img class="non-valid show" src="images/mark-non-valid.png" alt="Non valid">
+							<div class="name-validation-warning show">
+								<span>Enter your name</span>
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset class="form-age">
+						<span class="form-left-col">Age</span>
+
+						<input class="date-of-birth"
+						name="date-of-birth"
+						value="null"
+						data-format="DD-MM-YYYY"
+						data-template="D MMM YYYY">
+
+						<img class="valid" src="images/mark-valid.png" alt="Valid">
+						<img class="non-valid show" src="images/mark-non-valid.png" alt="Non valid">
+
+					</fieldset>
+
+					<fieldset class="form-location">
+						<span class="form-left-col">City</span>
+						<div class="form-generic-styled-wrapper">
+
+							<select class="form-generic-input">
+								<option value="london" selected>London</option>
+								<option value="paris">Paris</option>
+								<option value="new-york">New York</option>
+								<option value="berlin">Berlin</option>
+							</select>
+
+						</div>
+					</fieldset>
+
+					<fieldset class="form-features">
+						
+						<div class="form-features-motto">
+							<input id="cool" type="checkbox" name="cool" checked>
+							<label for="cool" class="form-features-checkbox-lables">I'm cool</label>
+
+							<input id="good-life" type="checkbox" name="good-life">
+							<label for="good-life" class="form-features-checkbox-lables">Life's good</label>
+						</div>
+
+						<div class="form-features-drinks">
+							<input id="tee" type="radio" name="drinks" value="tee">
+							<label for="tee" class="form-features-checkbox-lables">Tee</label>
+
+							<input id="beer" type="radio" name="drinks" value="beer" checked>
+							<label for="beer" class="form-features-checkbox-lables">Beer</label>
+						</div>
+
+					</fieldset>
+
+					<input class="form-submit-button" type="submit" name="submit" value="Start Now"/>
+
+				</form>
+			</div>
+		</section>
+
+		<section class="middle-section">
+			<div class="text-content">
+
+				<h2>Code this block</h2>
+
+				<img class="article1-photo" src="images/article1-photo.png" alt="Beautiful girl">
+				<article class="article-1">
+					This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. We
+				</article>
+			</div>
+			<div class="user-list-wrapper">
+
+				<h2>Users List</h2>
+
+				<div class="user-list">
+					<div class="carousel">
+
+						<div class="carousel-slides">
+							<div><img src="images/carousel-photo1.png" alt="Sexy girl"></div>
+							<div><img src="images/carousel-photo1.png" alt="Sexy girl"></div>
+							<div><img src="images/carousel-photo1.png" alt="Sexy girl"></div>
+							<div><img src="images/carousel-photo1.png" alt="Sexy girl"></div>
+							<div><img src="images/carousel-photo1.png" alt="Sexy girl"></div>
+							<div><img src="images/carousel-photo1.png" alt="Sexy girl"></div>
+							<div><img src="images/carousel-photo1.png" alt="Sexy girl"></div>
+						</div>
+
+						<div class="slide-context-menu">
+
+							<span>SexyGirl</span>
+							<a href="#"><img id="icon-wink" src="images/icon-wink.png"></img></a>
+							<a href="#"><img id="icon-add" src="images/icon-add.png"></img></a>
+
+						</div>
+					</div>
+
+					<nav class="tab-menu">
+						<ul class="tabs">
+							<li class="tab" id="tab1" data-target="#page1">
+								<span>Users List</span>
+							</li>
+							<li class="tab active" id="tab2" data-target="#page2">
+								<span>Active list tab <span>| 38</span></span>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane" id="page1">
+							</div>
+							<div class="tab-pane active" id="page2">
+
+								<div class="progress-bar">
+									<div class="meter">
+										<span style="width:73%"></span>
+										<p></p>
+									</div>
+								</div>
+
+								<div class="breadcrumbs">
+									<a href="#" class="steps">Step 1</a>
+									<a href="#" class="steps">Step 2</a>
+									<a href="#" class="steps">Step 3</a>
+									<a href="#" class="steps">Step 4</a>
+									<a href="#" class="steps">Step 5</a>
+								</div>
+
+								<div id="slider-range"></div>
+
+								<div class="donut-chartbox">
+									<div id="failureChart1"
+									chart-type="donut"
+									data-chart-max="100"
+									data-chart-segments='{ "0":["0","37","#FDA350"],  "1":["37","63","#ecebeb"] }'
+									data-chart-text="37%">
+								</div>
+							</div>
+
+							<fieldset class="star-rating">
+								<legend>Score:</legend>
+
+								<input type="radio" id="score-5" name="score" value="5"/>
+								<label title="5 stars" for="score-5">5 stars</label>
+
+								<input type="radio" id="score-4" name="score" value="4"/>
+								<label title="4 stars" for="score-4">4 stars</label>
+
+								<input type="radio" id="score-3" name="score" value="3"/>
+								<label title="3 stars" for="score-3">3 stars</label>
+
+								<input type="radio" id="score-2" name="score" value="2" checked="checked"/>
+								<label title="2 stars" for="score-2">2 stars</label>
+
+								<input type="radio" id="score-1" name="score" value="1"/>
+								<label title="1 stars" for="score-1">1 stars</label>
+							</fieldset>
+
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<section class="how-to">
+		<h2>How to succeed in online dating</h2>
+		<div class="column">
+			<p>There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.</p>
+
+			<blockquote class="modern-quote">In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.</blockquote>
+
+			<p>You can also upload photos to your dating profile from your Facebook account.</p>
+
+			<ol>
+				<li>Access your dating life even when you’re not browsing <a href="http://www.cupid.com/" target="_blank">Cupid.com</a>!</li>
+				<li>Search for new matches from your browser easily</li>
+				<li>Read and write messages & chat with members live, receive Datecasts, winks and alerts when your are online or have updated their profile info</li>
+				<li>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends</li>
+			</ol>
+
+			<blockquote class="curly-quote">In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.</blockquote>
+
+			<a class="link-view-more" href="#">Click here to view more</a>
+		</div>
+	</section>
+
+	<footer>
+		<img class="footer-logo" src="images/logo-bw.png" alt="Web Coder"></a>
+		<div class="footer-credit">
+			<span class="footer-credit-grey">VD</span><span class="footer-credit-black">Web Coder Test  Task</span><br>
+		</div>
+		<div class="footer-year">
+			<span>2013</span>
+		</div>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript" language="javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="libs/moment/moment.min.js"></script> 
+	<script src="libs/combodate-1.0.7/combodate.js"></script> 
+	<script type="text/javascript" src="libs/slick-1.6.0/slick/slick.min.js"></script>
+	<script src="libs/jQueryTabs/chrometab.js"></script>
+	<script src="libs/charts/charts.js"></script>
+	<script src="libs/shapes-polyfill/shapes-polyfill.min.js"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
